@@ -37,7 +37,7 @@ ACollidingPawn::ACollidingPawn()
 	}
 
 	UStaticMeshComponent* ConeVisual = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ChildRepresentation"));
-	FVector RootOffset = FVector(0.0f, 0.0f, 20.0f);
+	//FVector RootOffset = FVector(0.0f, 0.0f, 20.0f);
 	ConeVisual->SetupAttachment(RootComponent);
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ConeVisualAsset(TEXT("/Game/StarterContent/Shapes/Shape_Cone.Shape_Cone"));
 
